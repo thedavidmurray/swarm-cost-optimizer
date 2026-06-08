@@ -1,4 +1,5 @@
 # swarm-cost-optimizer
+<<<<<<< HEAD
 
 Cost-aware model routing for multi-agent LLM swarms. Automatically routes requests to the cheapest model that meets quality requirements.
 
@@ -29,3 +30,6 @@ model = router.route("Code review for PR #42", quality="high", max_cost=0.05)
 ## License
 
 MIT
+=======
+Cost-aware model routing for multi-agent LLM swarms
+>>>>>>> ce92b04072cb81b307f17fe72fe68e50e3c211ae
