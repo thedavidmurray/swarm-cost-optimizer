@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swarm-cost-optimizer"
+version = "0.1.0"
+description = "Cost-aware model routing for multi-agent LLM swarms"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "pydantic>=2.0"]
+
+[project.scripts]
+swarm-cost-optimizer = "swarm_cost_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: swarm-cost-optimizer
+Version: 0.1.0
+Summary: Cost-aware model routing for multi-agent LLM swarms
+License-Expression: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31
+Requires-Dist: pydantic>=2.0
+
+# swarm-cost-optimizer
+
+Cost-aware model routing for multi-agent LLM swarms. Automatically routes requests to the cheapest model that meets quality requirements.
+
+## Install
+
+```bash
+pip install swarm-cost-optimizer
+```
+
+## Usage
+
+```python
+from swarm_cost_optimizer import CostRouter
+
+router = CostRouter.from_file("agents.json")
+model = router.route("Code review for PR #42", quality="high", max_cost=0.05)
+# → "gpt-4o-mini" (fast, cheap, good enough for code review)
+```
+
+## Features
+
+- **Quality-aware routing** — Selects models by task category, not just price
+- **Budget enforcement** — Per-profile spend limits with hard caps
+- **Provider health** — Auto-fallback when providers are down
+- **Cost tracking** — JSONL logs for every routing decision
+- **CLI dashboard** — `swarm-cost-optimizer dashboard` for real-time monitoring
+
+## License
+
+MIT

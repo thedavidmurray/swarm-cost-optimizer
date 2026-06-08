@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/swarm_cost_optimizer/__init__.py
+src/swarm_cost_optimizer/cli.py
+src/swarm_cost_optimizer/providers.py
+src/swarm_cost_optimizer/router.py
+src/swarm_cost_optimizer.egg-info/PKG-INFO
+src/swarm_cost_optimizer.egg-info/SOURCES.txt
+src/swarm_cost_optimizer.egg-info/dependency_links.txt
+src/swarm_cost_optimizer.egg-info/entry_points.txt
+src/swarm_cost_optimizer.egg-info/requires.txt
+src/swarm_cost_optimizer.egg-info/top_level.txt
+tests/test_router.py

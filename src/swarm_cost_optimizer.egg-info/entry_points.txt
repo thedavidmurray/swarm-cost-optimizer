@@ -1,0 +1,2 @@
+[console_scripts]
+swarm-cost-optimizer = swarm_cost_optimizer.cli:main
